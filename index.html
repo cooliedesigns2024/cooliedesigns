@@ -25,7 +25,26 @@
     <link rel="icon" type="image/x-icon" href="./features/favi2.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+    
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .search-bar {
+      border-radius: 50px;
+      padding: 10px;
+      position: relative;
+    }
+    .search-bar .form-control {
+      border-radius: 50px;
+    }
+    .search-bar .btn {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      padding: 7px;
+    }
+
         .blue-button {
             display: inline-block;
             padding: 10px 20px;
@@ -55,10 +74,7 @@
         }
 
         /*bottom navigation bar*/
-        body {
-  margin: 0;
-  padding: 0;
-}
+        
 .skatzz {
   font-family: Arial;
   font-size: 30px;
@@ -109,6 +125,16 @@
   }
 }
 
+.rounded-container {
+      border-radius: 15px;
+      overflow: hidden; /* Ensures that content doesn't spill over rounded corners */
+      padding: 20px;
+      background-color: #f8f9fa; /* Optional: Sets a background color */
+    }
+
+    body {
+      margin: 20px; /* Apply a 20px margin around the body */
+    }
     </style>
 </head>
 <body>
@@ -119,14 +145,6 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </div>
-          </div>
           
         </div>
       </nav>
@@ -135,39 +153,75 @@
      <center>
         <br>
         <br>
-        <p>Apply for your dream job today.</p>
-        <p>Choose from the options below :</p>
-        <br>
-        <br>
+        <p>Job portals serve as digital platforms that connect employers and job seekers, streamlining the hiring process by providing a centralized space for job listings, applications, and career opportunities.</p>
+        <p>Apply for a job using the platforms below.</p>
+      
      </center>
+
+     <div class="container rounded-container">
+      <div class="search-bar">
+        <input type="text" class="form-control" id="searchInput" placeholder="Search...">
+        <button class="btn" type="button">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    
+      <ul class="list-group mt-3" id="searchList">
+        <li class="list-group-item"><a href="https://za.indeed.com/" target="_blank">Indeed</a></li>
+        <li class="list-group-item"><a href="https://www.careers24.com/" target="_blank">Careers24</a></li>
+        <li class="list-group-item"><a href="https://www.careerjunction.co.za/" target="_blank">Career Junction</a></li>
+        <li class="list-group-item"><a href="https://www.pnet.co.za/" target="_blank">Pnet</a></li>
+        <li class="list-group-item"><a href="https://www.careerjet.co.za/" target="_blank">Career Jet</a></li>
+        <li class="list-group-item"><a href="https://www.freerecruit.co.za/" target="_blank">Free Recruit</a></li>
+        <li class="list-group-item"><a href="https://www.glassdoor.com/index.htm" target="_blank">Glassdoor</a></li>
+        <li class="list-group-item"><a href="https://hireresolve.co.za/" target="_blank">Hire Resolve</a></li>
+        <li class="list-group-item"><a href="https://www.jobmail.co.za/" target="_blank">Job Mail</a></li>
+        <li class="list-group-item"><a href="https://www.jobvine.co.za/" target="_blank">Job Vine</a></li>
+        <li class="list-group-item"><a href="https://www.upwork.com/freelance-jobs/" target="_blank">upwork</a></li>
+        <li class="list-group-item"><a href="https://www.aftercollege.com/" target="_blank">aftercollege</a></li>
+        <li class="list-group-item"><a href="https://www.angellist.com/careers#open-positions" target="_blank">AngelList</a></li>
+        <li class="list-group-item"><a href="https://www.careerarc.com/job-seeker" target="_blank">careerarc</a></li>
+        <li class="list-group-item"><a href="https://www.careerbuilder.com/regional_sites" target="_blank">CareerBuilder</a></li>
+        <li class="list-group-item"><a href="https://www.careerstructure.com/" target="_blank">Career Structure</a></li>
+        <li class="list-group-item"><a href="https://www.cv-library.co.uk/" target="_blank">CV Library</a></li>
+        <li class="list-group-item"><a href="https://www.dice.com/" target="_blank">Dice</a></li>
+        <li class="list-group-item"><a href="https://www.freelancer.com/" target="_blank">freelancer</a></li>
+        <li class="list-group-item"><a href="https://www.gumtree.co.za/c/jobs-near-me" target="_blank">Gumtree</a></li>
+        <li class="list-group-item"><a href="https://www.guru.com/d/jobs/" target="_blank">guru</a></li>
+      </ul>
+    </div>
+
     <div>
-        <center>
-            <a href="https://za.indeed.com/" target="_blank"><button class="blue-button">Indeed</button></a>
-            <a href="https://www.careers24.com/" target="_blank"><button class="blue-button">Careers24</button></a>
-            <a href="https://www.careerjunction.co.za/" target="_blank"><button class="blue-button">Career Junction</button></a>
-            <a href="https://www.pnet.co.za/" target="_blank"><button class="blue-button">Pnet</button></a>
-            <a href="https://www.careerjet.co.za/" target="_blank"><button class="blue-button">Career Jet</button></a>
-            <a href="https://www.freerecruit.co.za/" target="_blank"><button class="blue-button">Free Recruit</button></a>
-            <a href="https://www.glassdoor.com/index.htm" target="_blank"><button class="blue-button">Glassdoor</button></a>
-            <a href="https://hireresolve.co.za/" target="_blank"><button class="blue-button">Hire Resolve</button></a>
-            <a href="https://www.jobmail.co.za/" target="_blank"><button class="blue-button">Job Mail</button></a>
-            <a href="https://www.jobvine.co.za/" target="_blank"><button class="blue-button">Job Vine</button></a>
-        <!-- Add more buttons here... -->
-        <a href="https://www.upwork.com/freelance-jobs/" target="_blank"><button class="blue-button">upwork</button></a>
-        <a href="https://www.aftercollege.com/" target="_blank"><button class="blue-button">aftercollege</button></a>
-        <a href="https://www.angellist.com/careers#open-positions" target="_blank"><button class="blue-button">AngelList</button></a>
-        <a href="https://www.careerarc.com/job-seeker" target="_blank"><button class="blue-button">careerarc</button></a>
-        <a href="https://www.careerbuilder.com/regional_sites" target="_blank"><button class="blue-button">CareerBuilder</button></a>
-        <a href="https://www.careerstructure.com/" target="_blank"><button class="blue-button">Career Structure</button></a>
-        <a href="https://www.cv-library.co.uk/" target="_blank"><button class="blue-button">CV Library</button></a>
-        <a href="https://www.dice.com/" target="_blank"><button class="blue-button">Dice</button></a>
-        <a href="https://www.freelancer.com/" target="_blank"><button class="blue-button">freelancer</button></a>
-        <a href="https://www.gumtree.co.za/c/jobs-near-me" target="_blank"><button class="blue-button">Gumtree</button></a>
-        <a href="https://www.guru.com/d/jobs/" target="_blank"><button class="blue-button">guru</button></a>
+      
+        <center><!--
+            <a href="https://za.indeed.com/" target="_blank">Indeed</a>
+            <a href="https://www.careers24.com/" target="_blank">Careers24</a>
+            <a href="https://www.careerjunction.co.za/" target="_blank">Career Junction</a>
+            <a href="https://www.pnet.co.za/" target="_blank">Pnet</a>
+            <a href="https://www.careerjet.co.za/" target="_blank">Career Jet</a>
+            <a href="https://www.freerecruit.co.za/" target="_blank">Free Recruit</a>
+            <a href="https://www.glassdoor.com/index.htm" target="_blank">Glassdoor</a>
+            <a href="https://hireresolve.co.za/" target="_blank">Hire Resolve</a>
+            <a href="https://www.jobmail.co.za/" target="_blank">Job Mail</a>
+            <a href="https://www.jobvine.co.za/" target="_blank">Job Vine</a>
+         Add more buttons here... 
+        <a href="https://www.upwork.com/freelance-jobs/" target="_blank">upwork</a>
+        <a href="https://www.aftercollege.com/" target="_blank">aftercollege</a>
+        <a href="https://www.angellist.com/careers#open-positions" target="_blank">AngelList</a>
+        <a href="https://www.careerarc.com/job-seeker" target="_blank">careerarc</a>
+        <a href="https://www.careerbuilder.com/regional_sites" target="_blank">CareerBuilder</a>
+        <a href="https://www.careerstructure.com/" target="_blank">Career Structure</a>
+        <a href="https://www.cv-library.co.uk/" target="_blank">CV Library</a>
+        <a href="https://www.dice.com/" target="_blank">Dice</a>
+        <a href="https://www.freelancer.com/" target="_blank">freelancer</a>
+        <a href="https://www.gumtree.co.za/c/jobs-near-me" target="_blank">Gumtree</a>
+        <a href="https://www.guru.com/d/jobs/" target="_blank">guru</a>-->
         <!--<a href="" target="_blank"><button class="blue-button"></button></a>-->
 
         </center>
     </div>
+    <br>
+    <br>
     <div>
         <center>
         <a href="" target="_blank"><button class="blu-button">More platforms coming soon!</button></a>
@@ -190,5 +244,24 @@
       </ul>
     </center>
     </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+<script>
+  document.getElementById('searchInput').addEventListener('keyup', function() {
+    const filter = this.value.toLowerCase();
+    const items = document.querySelectorAll('#searchList .list-group-item');
+    
+    items.forEach(function(item) {
+      if (item.textContent.toLowerCase().includes(filter)) {
+        item.style.display = '';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+</script>
 </body>
 </html>
